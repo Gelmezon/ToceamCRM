@@ -3,7 +3,7 @@
 <mapper namespace="com.thinkgem.jeesite.modules.studentmanage.dao.studentdocumentmanage.StudentInfoDao">
     
 	<sql id="studentInfoColumns">
-		a.userid AS "userid",
+		a.id AS "id",
 		a.code AS "code",
 		a.statuschange AS "statuschange",
 		a.studenttype AS "studenttype",
@@ -127,7 +127,7 @@
 	
 	<insert id="insert">
 		INSERT INTO student_info(
-			userid,
+			id,
 			code,
 			statuschange,
 			studenttype,
@@ -197,7 +197,7 @@
 			thirdpoll,
 			file_id
 		) VALUES (
-			#{userid},
+			#{id},
 			#{code},
 			#{statuschange},
 			#{studenttype},
@@ -271,7 +271,7 @@
 	
 	<update id="update">
 		UPDATE student_info SET 	
-			userid = #{userid},
+			id = #{id},
 			code = #{code},
 			statuschange = #{statuschange},
 			studenttype = #{studenttype},

@@ -34,9 +34,9 @@
 		<form:hidden path="id"/>
 		<sys:message content="${message}"/>		
 		<div class="control-group">
-			<label class="control-label">草拟吗：</label>
+			<label class="control-label">id：</label>
 			<div class="controls">
-				<form:input path="userid" htmlEscape="false" maxlength="20" class="input-xlarge required digits"/>
+				<form:input path="id" htmlEscape="false" maxlength="20" class="input-xlarge required digits"/>
 				<span class="help-inline"><font color="red">*</font> </span>
 			</div>
 		</div>
